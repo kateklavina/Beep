@@ -7,14 +7,18 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
 
+    let player = AVPlayer(url: Bundle.main.url(forResource: "trumpet", withExtension: "mp3")!)
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
 
+    @IBAction func beepPressed(_ sender: Any) {
+    }
 }
 
